@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "grimforge",
 	"version": "${version}",
-	"name": "Grimforge",
+	"name": "grimforge",
 	"description": "Enter the Grim and adventure into a world of new depths.",
 	"authors": [
 		"Suleos"

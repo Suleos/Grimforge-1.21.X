@@ -1,0 +1,11 @@
+{
+  "item.grimforge.revenite_ingot": "Revenite Ingot",
+  "item.grimforge.revenite_fragment": "Fragmented Revenite",
+  "item.grimforge.scalding_revenite_fragment": "Scalding Fragmented Revenite",
+
+  "block.grimforge.grimstone": "Grimstone",
+  "block.grimforge.grimstone_revenite_ore": "Grimstone Revenite Ore",
+  "block.grimforge.revenite_block":  "Block of Revenite",
+
+  "itemgroup.grimforge.grimforge_items_group": "The Grimforge"
+}
