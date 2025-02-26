@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "grimforge",
+	"version": "${version}",
+	"name": "Grimforge",
+	"description": "Enter the Grim and adventure into a world of new depths.",
+	"authors": [
+		"Suleos"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/grimforge/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.suleos.grimforge.Grimforge"
+		],
+		"fabric-datagen": [
+			"net.suleos.grimforge.GrimforgeDataGenerator"
+		],
+		"client": [
+			"net.suleos.grimforge.GrimforgeClient"
+		]
+	},
+	"mixins": [
+		"grimforge.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
