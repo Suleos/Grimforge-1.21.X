@@ -1,0 +1,8 @@
+{
+  "chain_bind": {
+    "category": "players",
+    "sounds": [
+      "effect/chain_bind"
+    ]
+  }
+}
