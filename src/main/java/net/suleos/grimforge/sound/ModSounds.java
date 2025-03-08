@@ -28,6 +28,11 @@ public class ModSounds {
             Identifier.of(Grimforge.MOD_ID, "chain_bind"),
             createSoundEvent(Identifier.of(Grimforge.MOD_ID, "chain_bind"))
     );
+    public static final SoundEvent HEART_PULSE = Registry.register(
+            Registries.SOUND_EVENT,
+            Identifier.of(Grimforge.MOD_ID, "heart_pulse"),
+            createSoundEvent(Identifier.of(Grimforge.MOD_ID, "heart_pulse"))
+    );
 
     public static void registerSounds() {
         // Call this during mod initialization if needed

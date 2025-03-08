@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COBBLED_GRIMSTONE);
                         entries.add(ModBlocks.NOCTILITH);
                         entries.add(ModBlocks.DRIFTSTONE);
+                        entries.add(ModBlocks.GRIM_GRAVEL);
                         entries.add(ModBlocks.GRIMSTONE_REVENITE_ORE);
                         entries.add(ModBlocks.GRIMSTONE_NETHERITE_ORE);
                         entries.add(ModBlocks.GRIMSTONE_DIAMOND_ORE);
@@ -31,6 +32,25 @@ public class ModItemGroups {
                         //LOGS
                         entries.add(ModBlocks.MOURNING_OAK_LOG);
                         entries.add(ModBlocks.MOURNING_OAK_WOOD);
+                        entries.add(ModBlocks.STRIPPED_MOURNING_OAK_LOG);
+                        entries.add(ModBlocks.STRIPPED_MOURNING_OAK_WOOD);
+                        entries.add(ModBlocks.MOURNING_OAK_PLANKS);
+                        entries.add(ModBlocks.MOURNING_OAK_STAIRS);
+                        entries.add(ModBlocks.MOURNING_OAK_SLAB);
+                        entries.add(ModBlocks.MOURNING_OAK_FENCE);
+                        entries.add(ModBlocks.MOURNING_OAK_FENCE_GATE);
+                        entries.add(ModBlocks.MOURNING_OAK_DOOR);
+                        entries.add(ModBlocks.MOURNING_OAK_TRAPDOOR);
+                        entries.add(ModBlocks.MOURNING_OAK_BUTTON);
+
+                        entries.add(ModBlocks.SANGUOR_LOG);
+                        entries.add(ModBlocks.SANGUOR_WOOD);
+                        entries.add(ModBlocks.SANGUOR_PLANKS);
+                        entries.add(ModBlocks.SANGUOR_STAIRS);
+                        entries.add(ModBlocks.SANGUOR_SLAB);
+                        entries.add(ModBlocks.SANGUOR_FENCE);
+                        entries.add(ModBlocks.SANGUOR_FENCE_GATE);
+                        entries.add(ModBlocks.SANGUOR_BUTTON);
                         //GRIMSTONE BRICKS GROUP
                         entries.add(ModBlocks.GRIMSTONE_BRICKS);
                         entries.add(ModBlocks.GRIMSTONE_BRICK_STAIRS);
@@ -58,9 +78,16 @@ public class ModItemGroups {
                         //FOLIAGE
                         entries.add(ModBlocks.GLOOM_BUSH);
                         entries.add(ModBlocks.TRISTESSA);
+                        entries.add(ModBlocks.TRISTESSA_VINE);
                         entries.add(ModBlocks.GLOOM_SHORT_GRASS);
                         entries.add(ModBlocks.GLOOM_MOSS);
                         entries.add(ModBlocks.GLOOM_MOSS_BLOCK);
+
+
+                        entries.add(ModBlocks.SANGUOR_LEAVES);
+                        entries.add(ModBlocks.SANGUOR_SAPLING);
+                        entries.add(ModBlocks.VISCOUS_FERN);
+                        entries.add(ModBlocks.VISCOUS_GRASS);
                         //CONSUMABLES
                         entries.add(ModItems.GLOOM_BERRIES);
                     }).build());

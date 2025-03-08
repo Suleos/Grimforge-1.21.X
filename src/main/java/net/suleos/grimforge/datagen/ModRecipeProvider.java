@@ -7,6 +7,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -62,14 +63,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.GLOOM_MOSS_BLOCK), conditionsFromItem(ModBlocks.GLOOM_MOSS_BLOCK))
                 .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"gloom_moss_from_crafting"));
 
+
+
+        //MOURNING OAK
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOURNING_OAK_WOOD, 4)
                 .pattern("   ")
                 .pattern(" xx")
                 .pattern(" xx")
                 .input('x', ModBlocks.MOURNING_OAK_LOG)
                 .criterion(hasItem(ModBlocks.MOURNING_OAK_LOG), conditionsFromItem(ModBlocks.MOURNING_OAK_LOG))
-                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"weeping_wood_from_crafting"));
+                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"mourning_wood_from_crafting"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_MOURNING_OAK_WOOD, 4)
+                .pattern("   ")
+                .pattern(" xx")
+                .pattern(" xx")
+                .input('x', ModBlocks.STRIPPED_MOURNING_OAK_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_MOURNING_OAK_LOG), conditionsFromItem(ModBlocks.STRIPPED_MOURNING_OAK_LOG))
+                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"stripped_mourning_wood_from_crafting_"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOURNING_OAK_PLANKS, 4)
+                .input(ModBlocks.MOURNING_OAK_LOG, 1)
+                .criterion(hasItem(ModBlocks.MOURNING_OAK_LOG), conditionsFromItem(ModBlocks.MOURNING_OAK_LOG))
+                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"mourning_planks_from_crafting"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOURNING_OAK_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_MOURNING_OAK_LOG, 1)
+                .criterion(hasItem(ModBlocks.STRIPPED_MOURNING_OAK_LOG), conditionsFromItem(ModBlocks.STRIPPED_MOURNING_OAK_LOG))
+                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"mourning_planks_from_crafting_1"));
+        createStairsRecipe(ModBlocks.MOURNING_OAK_STAIRS.asItem(),
+                Ingredient.ofItems(ModBlocks.MOURNING_OAK_PLANKS.asItem()));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOURNING_OAK_SLAB.asItem(),
+                Ingredient.ofItems(ModBlocks.MOURNING_OAK_PLANKS.asItem()));
+        createFenceRecipe(ModBlocks.MOURNING_OAK_FENCE.asItem(),Ingredient.ofItems(ModBlocks.MOURNING_OAK_PLANKS.asItem()));
+        createFenceGateRecipe(ModBlocks.MOURNING_OAK_FENCE_GATE.asItem(),Ingredient.ofItems(ModBlocks.MOURNING_OAK_PLANKS.asItem()));
+        createDoorRecipe(ModBlocks.MOURNING_OAK_DOOR.asItem(),Ingredient.ofItems(ModBlocks.MOURNING_OAK_PLANKS.asItem()));
+        createTrapdoorRecipe(ModBlocks.MOURNING_OAK_TRAPDOOR.asItem(),Ingredient.ofItems(ModBlocks.MOURNING_OAK_PLANKS.asItem()));
 
+        //SANGUOR
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANGUOR_WOOD, 4)
+                .pattern("   ")
+                .pattern(" xx")
+                .pattern(" xx")
+                .input('x', ModBlocks.SANGUOR_LOG)
+                .criterion(hasItem(ModBlocks.SANGUOR_LOG), conditionsFromItem(ModBlocks.SANGUOR_LOG))
+                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"sanguor_wood_from_crafting"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANGUOR_PLANKS, 4)
+                .input(ModBlocks.SANGUOR_LOG, 1)
+                .criterion(hasItem(ModBlocks.SANGUOR_LOG), conditionsFromItem(ModBlocks.SANGUOR_LOG))
+                .offerTo(recipeExporter, Identifier.of(Grimforge.MOD_ID,"sanguor_planks_from_crafting"));
+        createStairsRecipe(ModBlocks.SANGUOR_STAIRS.asItem(),
+                Ingredient.ofItems(ModBlocks.SANGUOR_PLANKS.asItem()));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANGUOR_SLAB.asItem(),
+                Ingredient.ofItems(ModBlocks.SANGUOR_PLANKS.asItem()));
+        createFenceRecipe(ModBlocks.SANGUOR_FENCE.asItem(),Ingredient.ofItems(ModBlocks.SANGUOR_PLANKS.asItem()));
+        createFenceGateRecipe(ModBlocks.SANGUOR_FENCE_GATE.asItem(),Ingredient.ofItems(ModBlocks.SANGUOR_PLANKS.asItem()));
 
     }
 }

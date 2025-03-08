@@ -2,7 +2,13 @@
   "chain_bind": {
     "category": "players",
     "sounds": [
-      "effect/chain_bind"
+      "grimforge:effect/chain_bind"
+    ]
+  },
+  "heart_pulse": {
+    "category": "blocks",
+    "sounds": [
+      "grimforge:heart_pulse"
     ]
   }
 }

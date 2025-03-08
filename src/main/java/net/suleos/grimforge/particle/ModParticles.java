@@ -10,6 +10,8 @@ import net.suleos.grimforge.Grimforge;
 public class ModParticles {
     public static final SimpleParticleType GLOOM_GLOW_PARTICLE =
             registerParticle("gloom_glow_particle", FabricParticleTypes.simple());
+    public static final SimpleParticleType VISCOUS_DRIP_PARTICLE =
+            registerParticle("viscous_drip_particle", FabricParticleTypes.simple());
 
     private static SimpleParticleType registerParticle(String name, SimpleParticleType particleType) {
         return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(Grimforge.MOD_ID, name), particleType);

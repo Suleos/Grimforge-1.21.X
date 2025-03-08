@@ -36,6 +36,32 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GRIM_SANGUOR)
                 .add(ModBlocks.GRIM_MOURNIUM);
 
+        //DIRT/GRAVEL
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(ModBlocks.GRIM_GRAVEL);
+
+        //WOODEN BLOCKS
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.MOURNING_OAK_LOG)
+                .add(ModBlocks.MOURNING_OAK_WOOD)
+                .add(ModBlocks.STRIPPED_MOURNING_OAK_LOG)
+                .add(ModBlocks.STRIPPED_MOURNING_OAK_WOOD)
+                .add(ModBlocks.MOURNING_OAK_PLANKS)
+                .add(ModBlocks.MOURNING_OAK_STAIRS)
+                .add(ModBlocks.MOURNING_OAK_SLAB)
+                .add(ModBlocks.MOURNING_OAK_FENCE)
+                .add(ModBlocks.MOURNING_OAK_FENCE_GATE)
+                .add(ModBlocks.MOURNING_OAK_DOOR)
+                .add(ModBlocks.MOURNING_OAK_TRAPDOOR)
+
+                .add(ModBlocks.SANGUOR_LOG)
+                .add(ModBlocks.SANGUOR_WOOD);
+
+        //LEAVES
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.SANGUOR_LEAVES);
+        getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT)
+                .add(ModBlocks.SANGUOR_LEAVES);
 
         //WALLS
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -62,9 +88,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //LOGS
         getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(ModBlocks.MOURNING_OAK_LOG)
-                .add(ModBlocks.MOURNING_OAK_WOOD);
+                .add(ModBlocks.MOURNING_OAK_WOOD)
+                .add(ModBlocks.STRIPPED_MOURNING_OAK_LOG)
+                .add(ModBlocks.STRIPPED_MOURNING_OAK_WOOD)
+                .add(ModBlocks.SANGUOR_LOG)
+                .add(ModBlocks.SANGUOR_WOOD);
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MOURNING_OAK_LOG)
-                .add(ModBlocks.MOURNING_OAK_WOOD);
+                .add(ModBlocks.MOURNING_OAK_WOOD)
+                .add(ModBlocks.STRIPPED_MOURNING_OAK_LOG)
+                .add(ModBlocks.STRIPPED_MOURNING_OAK_WOOD)
+                .add(ModBlocks.SANGUOR_LOG)
+                .add(ModBlocks.SANGUOR_WOOD);
+
+        //FENCES
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.MOURNING_OAK_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.MOURNING_OAK_FENCE_GATE);
+
+
+
     }
 }
